@@ -1,0 +1,27 @@
+{
+  "name": "sampletaf",
+  "version": "1.0.0",
+  "description": "sample Test Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:functional": "playwright test tests/functional/",
+    "allure:generate": "allure generate ./allure-results --clean",
+    "allure:open": "allure open ./allure-report",
+    "allure:serve": "allure serve ./allure-results"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.49.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "allure-playwright": "^2.9.2",
+    "typescript": "^5.3.2"
+  }
+}
